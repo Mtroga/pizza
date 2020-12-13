@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,13 +7,14 @@
     box-sizing: border-box;
   }
   body{
-    font-family: montserrat;
+    font-family: Poppins, sans-serif;
+    font-size: 400;
   }
   nav{
-    background: rgba(216, 200, 129, 0.5);
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.664), rgba(0, 0, 0, 0.788));
     height: 120px;
     width: 100%;
-    border-bottom: 3px solid #329c01;
+    border-bottom: 3px solid #ff9737;
     z-index: 1;
   }
   label.logo img{
@@ -34,30 +36,32 @@
   }
   nav ul li a{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
   }
   a:hover{
-    background: rgb(255, 224, 50);
+    background: #fd983a;
     transition: .5s;
     border-radius: 5px;
     text-decoration: none;
   }
   a.active{
-    border-bottom: 3px solid rgb(255, 224, 50);
+    border-bottom: 2px solid #ff9737;
   }
 
   .container {
-    display: inline-block;
+    font-size: 30px;
+    color: white;
+    float: right;
     cursor: pointer;
   }
   
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-image: linear-gradient(to right, rgb(172, 103, 1) , rgb(255, 170, 72));
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -77,8 +81,8 @@
     font-size: 30px;
     color: white;
     float: right;
-    line-height: 120px;
     margin-right: 40px;
+    margin-top: 30px;
     cursor: pointer;
     display: none;
   }
@@ -125,7 +129,7 @@
     }
     a:hover,a.active{
       background: none;
-      color: #0082e6;
+      color: rgb(255, 224, 50);
     }
     #check:checked ~ ul{
       left: 0;
